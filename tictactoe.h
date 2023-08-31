@@ -1,0 +1,16 @@
+void initialize1(char board[3][3]);
+void initialize2(char board[4][4]);
+void initialize3(char board[5][5]);
+void draw1(char board[3][3]);
+void draw2(char board[4][4]);
+void draw3(char board[5][5]);
+int change_board1(char symbol,char board[3][3],char* choice);
+int change_board2(char symbol,char board[4][4],char* name);
+int change_board3(char symbol,char board[5][5],char* name);
+int check_win1(char board[3][3]);
+int check_win2(char board[4][4]);
+int check_win3(char board[5][5]);
+int change_board_computer1(char symbol,char board[3][3],char* name);
+int change_board_computer2(char symbol,char board[4][4],char* name);
+int change_board_computer3(char symbol,char board[5][5],char* name);
+void display_winner(int count,int score,char* player1_name,char*player2_name);
