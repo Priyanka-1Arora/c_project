@@ -62,8 +62,7 @@ label1:
 			
 label3:
 			printf("\n\n\t\t\tPlayer 1(%s), enter your choice(@ or #)",player1_name);
-			scanf("%c",&player1_choice);
-			player1_choice=getchar();
+			scanf(" %c",&player1_choice);
 			
 			//TO CHECK IF INPUT SYMBOL IS CORRECT OR NOT
 			while(player1_choice!='@' &&  player1_choice!='#'){
@@ -71,7 +70,7 @@ label3:
 				
 				//TAKING INPUT AGAIN
 				printf("Enter your choice(@ or #)");
-				scanf("%c",&player1_choice);
+				scanf(" %c",&player1_choice);
 			}
 			
 			
@@ -260,8 +259,7 @@ label3:
 			char player2_choice;
 			
 			printf("\t\t\t%s Enter your choice(@ or #)",player1_name);
-			scanf("%c",&player1_choice);
-			player1_choice=getchar();
+			scanf(" %c",&player1_choice);
 			
 			//TO CHECK IF INPUT SYMBOL IS CORRECT OR NOT
 			while(player1_choice!='@' &&  player1_choice!='#'){
@@ -269,7 +267,7 @@ label3:
 				
 				//TAKING INPUT AGAIN
 				printf("Enter your choice(@ or #)");
-				scanf("%c",&player1_choice);
+				scanf(" %c",&player1_choice);
 			}
 			if(player1_choice == '@'){
 				player2_choice='#';

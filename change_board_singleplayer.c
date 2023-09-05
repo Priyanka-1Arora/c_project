@@ -4,6 +4,7 @@
 int change_board_computer1(char symbol,char board[3][3],char* name){
 	char choice;
 	if(!strcmp(name,"Computer")){
+label5:
 		int randomNumber=rand()%9+1;
 		choice=(char)(randomNumber+65);
 		printf("\nComputer choice is %c\n",choice);
@@ -11,8 +12,7 @@ int change_board_computer1(char symbol,char board[3][3],char* name){
 	else{
 		printf("\n\t\t\t%s,Enter alphabet from (A-I) to fill your choice:",name);
 		char d;
-		d=getchar();
-		scanf("%c",&choice);
+		scanf(" %c",&choice);
 	}
 	if((choice=='A' || choice=='a') && board[0][0]=='A'){
 		board[0][0]=symbol;
@@ -42,7 +42,12 @@ int change_board_computer1(char symbol,char board[3][3],char* name){
 		board[2][2]=symbol;
 	}
 	else{
-		printf("\nWrong Input\n");
+		if(!strcmp(name,"Computer")){
+			goto label5;
+		}
+		else{
+			printf("\nWrong Input\n");
+		}
 		return -1;
 	} 
 	return 0;
@@ -52,6 +57,7 @@ int change_board_computer1(char symbol,char board[3][3],char* name){
 int change_board_computer2(char symbol,char board[4][4],char* name){
 	char choice;
 	if(!strcmp(name,"Computer")){
+label4:
 		int randomNumber=rand()%16+1;
 		choice=(char)(randomNumber+65);
 		printf("\nComputer choice is %c\n",choice);
@@ -59,8 +65,7 @@ int change_board_computer2(char symbol,char board[4][4],char* name){
 	else{
 		printf("\n\t\t\t%s,Enter alphabet from (A-I) to fill your choice:",name);
 		char d;
-		d=getchar();
-		scanf("%c",&choice);
+		scanf(" %c",&choice);
 	}
 	if((choice=='A' || choice=='a') && board[0][0]=='A'){
 		board[0][0]=symbol;
@@ -111,7 +116,12 @@ int change_board_computer2(char symbol,char board[4][4],char* name){
 		board[3][3]=symbol;
 	}
 	else{
-		printf("\nWrong Input\n");
+		if(!strcmp(name,"Computer")){
+			goto label4;
+		}
+		else{
+			printf("\nWrong Input\n");
+		}
 		return -1;
 	} 
 	return 0;
@@ -121,6 +131,7 @@ int change_board_computer2(char symbol,char board[4][4],char* name){
 int change_board_computer3(char symbol,char board[5][5],char* name){
 	char choice;
 	if(!strcmp(name,"Computer")){
+label6:
 		int randomNumber=rand()%25+1;
 		choice=(char)(randomNumber+65);
 		printf("\nComputer choice is %c\n",choice);
@@ -128,8 +139,7 @@ int change_board_computer3(char symbol,char board[5][5],char* name){
 	else{
 		printf("\n\t\t\t%s,Enter alphabet from (A-I) to fill your choice:",name);
 		char d;
-		d=getchar();
-		scanf("%c",&choice);
+		scanf(" %c",&choice);
 	}
 	if((choice=='A' || choice=='a') && board[0][0]=='A'){
 		board[0][0]=symbol;
@@ -207,7 +217,12 @@ int change_board_computer3(char symbol,char board[5][5],char* name){
 		board[4][4]=symbol;
 	}
 	else{
-		printf("\nWrong Input\n");
+		if(!strcmp(name,"Computer")){
+			goto label6;
+		}
+		else{
+			printf("\nWrong Input\n");
+		}
 		return -1;
 	} 
 	return 0;
