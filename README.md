@@ -1,39 +1,43 @@
-C_PROJECT
+# C_PROJECT - Tic Tac Toe Game
 
-PROBLEM STATEMENT:-
-Develop a two-player Tic Tac Toe game where players take turns to place their symbols (@ or #) on a 3*3,4*4,5*5 grid. The game should validate moves, determine the winner, and handle ties. It should also provide a user-friendly interface for players to interact with the game
+## Problem Statement
 
-SPECIFICATIONS:-
-(i)Create a 3*3,4*4,5*5 grid to represent the Tic Tac Toe board
-(ii)To take player names
-(iii)To let them decide to choose their symbols and in which mode they want to play singleplayer or multiplayer
-(iv)To make sure in multiplayer game both player names are not same
-(v)To let them decide their difficulty level and show board accordingly
-(vi)To make sure the input provided by user is correct and is not a cell where a symbol is already placed
-(vii)To make sure same player turns come again who entered the wrong move
-(viii)To dispaly board after each move
-(ix)To handle ties
-(x)To display winner name at end of game
-(xi)To give options to restart the game or exit at end of the game
+Develop a two-player Tic Tac Toe game where players take turns to place their symbols (@ or #) on a 3x3, 4x4, or 5x5 grid. The game should validate moves, determine the winner, and handle ties. It should also provide a user-friendly interface for players to interact with the game.
 
-GOALS:-
-(i)Create a fully functional game that allows two players to play Tic Tac Toe, follows the rules of the game, and accurately determines the winner or a tie
-(ii)Define a user interface that gives clear instructions and display board at each move
-(iii)To create logic to decide in which mode they want to play and player names
-(iv)To implement logic to check both player names are not same
-(v)To make 3*3,4*4,5*5 grid to display board
-(vi)To implement the logic to detect when the game ends in a tie due to all cells being filled
-(vii)Writing clean and well-organized code with meaningful variable names and comments to make it easy to understand
-(viii)To implement logic to validate player's moves
-(ix)To implement the logic to detect winning conditions
-(x)To implement logic to display winners name at end of game and giving option to exit or restart the game
+## Specifications
 
-DESIGN:-
-(i)Initalizing variables to take their names and symbols
-(ii)Initalizing variables to take their playing mode and difficulty level 
-(iii)Intialing board based on difficulty level
-(iv)Taking player inputs and making desired changes in board and validating moves 
-(v)Displaying board for each move
-(vi)Checking for winning condition or ties
-(vii)Displaying winner name or tie message after end of game
-(viii)Taking input to again restart game or exit
+1. Create a 3x3, 4x4, or 5x5 grid to represent the Tic Tac Toe board.
+2. Take player names.
+3. Allow players to choose their symbols and select a game mode (singleplayer or multiplayer).
+4. Ensure that in multiplayer mode, both player names are different.
+5. Allow players to choose their difficulty level and display the board accordingly.
+6. Validate user input to ensure it's correct and that the chosen cell is not already occupied.
+7. Ensure that the same player gets another turn if they enter an incorrect move.
+8. Display the board after each move.
+9. Handle ties.
+10. Display the winner's name at the end of the game.
+11. Provide options to restart the game or exit at the end.
+
+## Goals
+
+1. Create a fully functional game that allows two players to play Tic Tac Toe, follows the rules of the game, and accurately determines the winner or a tie.
+2. Define a user interface that gives clear instructions and displays the board after each move.
+3. Implement logic to determine the game mode and player names.
+4. Implement logic to prevent both players from having the same name.
+5. Create a grid (3x3, 4x4, or 5x5) to display the board.
+6. Implement the logic to detect a tie when all cells are filled.
+7. Write clean and well-organized code with meaningful variable names and comments for better understanding.
+8. Implement logic to validate player's moves.
+9. Implement logic to detect winning conditions.
+10. Display the winner's name at the end of the game and provide options to exit or restart.
+
+## Design
+
+1. Initialize variables to store player names and symbols.
+2. Initialize variables to store the playing mode and difficulty level.
+3. Initialize the board based on the selected difficulty level.
+4. Take player inputs, update the board, and validate moves.
+5. Display the board after each move.
+6. Check for winning conditions or ties.
+7. Display the winner's name or a tie message at the end of the game.
+8. Take user input to either restart the game or exit.
